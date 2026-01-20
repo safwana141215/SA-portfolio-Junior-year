@@ -18,16 +18,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <style>
-    /* Make CodeSkulptor iframes bigger and responsive */
     .project iframe {
       width: 100%;
       height: 500px;
       border: 2px solid #ccc;
       border-radius: 8px;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
-
 <body>
 
   <!-- NAVBAR -->
@@ -36,10 +51,9 @@
       <div class="navbar-left">
         <img src="logo.png" alt="Logo" />
       </div>
-
       <ul class="navbar-right">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#featured-projects">Projects</a></li>
         <li><a href="cfus.html">CFUs</a></li>
         <li><a href="labs.html">Labs</a></li>
         <li><a href="contact.html">Contacts</a></li>
@@ -47,7 +61,6 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main class="home-card">
 
     <!-- BIO -->
@@ -56,7 +69,6 @@
         <div class="bio-pic">
           <img src="profile.jpg" alt="Safwan Ahmed" />
         </div>
-
         <div class="bio-text">
           <h1>Safwan Ahmed</h1>
           <h4>Student</h4>
@@ -68,19 +80,15 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT LINKS -->
     <section class="resource-card">
       <h2>Contact</h2>
-
       <div class="contact-links">
-        <!-- Email -->
         <div class="contact-item">
           <img src="icon1.jpg" alt="Email Icon" class="contact-icon" />
           <p>Email:</p>
           <a href="mailto:Safwana13@nycstudents.net">Safwana13@nycstudents.net</a>
         </div>
-
-        <!-- LinkedIn -->
         <div class="contact-item">
           <img src="icon2.jpg" alt="LinkedIn Icon" class="contact-icon" />
           <a href="https://www.linkedin.com/in/safwan-ahmed-6b64633a7/" target="_blank">LinkedIn</a>
@@ -89,7 +97,7 @@
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="resource-card">
+    <section class="resource-card" id="featured-projects">
       <h2>Featured Projects</h2>
       <p>These projects highlight my strongest work.</p>
     </section>
@@ -99,7 +107,6 @@
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/?authuser=0#user310_jgGI1xLkhh8olve.py"
                 title="Chatbot Project"></iframe>
-
         <div class="reflection">
           <h3>Chatbot</h3>
           <p>
@@ -114,7 +121,6 @@
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/?authuser=0#user310_sMcGBCays99MEZD.py"
                 title="Divisible by Three Project"></iframe>
-
         <div class="reflection">
           <h3>Divisible by Three</h3>
           <p>
